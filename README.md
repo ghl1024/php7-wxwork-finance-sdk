@@ -21,6 +21,7 @@ openssl扩展
         make && make install
 ```
     php.ini 增加 extension=wxwork_finance_sdk.so
+    * 文件命名为 0-wxwork_finance_sdk.ini 优选加载 解决与其他扩展加载顺序问题导致的段错误
     
 ## API
 ```php
