@@ -21,7 +21,7 @@ openssl扩展
         make && make install
 ```
     php.ini 增加 extension=wxwork_finance_sdk.so
-    * 文件命名为 0-wxwork_finance_sdk.ini 优选加载 解决与其他扩展加载顺序问题导致的段错误
+
     
 ## API
 ```php
@@ -85,6 +85,8 @@ openssl扩展
        
       2. 与swoole的扩展冲突
        * 优先加载wxwork_finance_sdk.so 后加载swoole 【@tisswb】
+       
+      3. 建议把文件命名为 0-wxwork_finance_sdk.ini 优选加载 解决与其他扩展加载顺序问题导致的段错误
        
  ## 示例
  
